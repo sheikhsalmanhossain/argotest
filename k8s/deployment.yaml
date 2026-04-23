@@ -6,7 +6,7 @@ metadata:
     app: client
   name: client
 spec:
-  replicas: 6
+  replicas: 4
   selector:
     matchLabels:
       app: client
@@ -18,7 +18,7 @@ spec:
         app: client
     spec:
       containers:
-      - image: nginx
+      - image: salman98/kub-demo-frontend
         name: nginx
         resources: {}
 status: {}
